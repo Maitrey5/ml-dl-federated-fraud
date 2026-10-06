@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+s
+# OS
+.DS_Store
+Thumbs.db
+
+# test-files
+test*
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+*.pem
+
+# Dataset
+creditcard.csv

@@ -1,0 +1,27 @@
+experiment:
+  name: fraud_logistic_regression
+  seed: 42
+
+data:
+  test_size: 0.20
+  validation_size: 0.20
+
+model:
+  name: logistic_regression
+  learning_rate: 0.01 
+  local_epochs: 2
+  batch_size: 64
+  
+federated:
+  algorithm: fedprox
+  num_clients: 10
+  num_rounds: 20
+  fraction_train: 1.0
+  min_train_nodes: 3
+  min_available_nodes: 3
+
+fedprox:
+  mu: 0.01
+
+evaluation:
+  threshold: 0.5
